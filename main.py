@@ -1,6 +1,2 @@
-def foo():
-    foo()
-
-
-class Bar(object):
-    __slots__ = ()
+print('hello world')
+print("Hello GIT")
