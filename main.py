@@ -1,2 +1,2 @@
-print('hello world')
-print("Hello GIT")
+class Bar(object):
+    __slots__ = ()
