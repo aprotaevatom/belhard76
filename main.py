@@ -1,135 +1,216 @@
-# a = 4.34354
-# print(pow(-4, 0.5))
+# numbers = [2, 4, 6, 8, 10]
+# numbers[0:2] = "Hello"
+# print(numbers)
+# numbers += numbers
+# print(numbers * 23)
+# print(len(numbers))
 
+# text = "Hello World"
+# s = list(text)
+# print(s)
 
-# a = -5.56465
-# print(abs(a))
+# numbers = [i * 2 for i in "HELLO"]
+# print(numbers)
 
-# a = float("-.112_342_342e10")
+# numbers = [i ** 2 for i in range(101)]
+# print(numbers)
+# numbers = list(range(101))
+# print(numbers)
+
+# numbers = [2, 4, 6, 8]
+# numbers.append([1, 2, 3])
+# print(numbers)
+
+# a = [1, 2, 3]
+# b = a.copy()
+# a.append(4)
+# print(b)
+
+# a = [[1, 2, 3], 4, 5, 6]
+# b = a.copy()
+# a[0].append(10)
+# print(b)
+
+# a = [1, 2, 3]
+# b = []
+# b.append(a)
+# c = b.copy()
+# a.append(4)
+# print(b[0] is a is c[0])
+
+# a = []
+# a.append(a)
+# print(a)
+# a = [2, 4, 6, 43, 2, 4]
+# print(a.count(2))
+# a.extend("HELLO WORLD")
 # print(a)
 
-# print(float("inf"))
-# print(float("-inf"))
-# print(float("nan"))
-# print(float("-nan"))
-# print(float("nan") == float("nan"))
-
-# a = (2342342+2j)
+# a = [1, 2, 3, 4, 5, 3, 3, 6]
+# a.insert(2, "object")
 # print(a)
-# [-5, 256]
-
-# a = None
-# print(a is None)
-
-# print(2 == 2.0)
-# print(2 != 4)
-# print(2 > 4)
-# print(2 < 4)
-# print(2 >= 4)
-# print(2 <= 4)
-# print(2 is 2)
-# print(2 is not 2.0)
-
-# text = "abcde\t\nfghijkl"
-# print(text[slice(0, 5, 2)])
-# print(len(text))
-
-
-# a = "hello world"
-# b = "hello world"
-# print(a is b)
-
-# a = "Hello world"
-# print("Hell" not in a)
-
-# a = "hello"
-# b = "world"
-# c = a + b
-# print(c * -5)
-
-# a = r"hello\n\n\n\nworld"
+# b = a.pop(2)
+# print(b)
+# print(a)
+# a.remove(3)
+# print(a)
+# a.reverse()
+# print(a)
+# a.sort()
 # print(a)
 
-name = "Alex"
-email = "alex@gmail.com"
-age = 34
-is_human = True
-# text = "Hello %(first_name)s email=%(email_address)s" % {"first_name": name, "email_address": email}
-# text = "Hello {first_name} your email {email_address}".format(first_name=name, email_address=email)
-# text = f"Hello {name} your email {email}"
-# print(text)
 
-# text = f"{343465.2378546:.3f} \N{fire}🫡"
-# print(text)
-# text = "Hello world".encode()
-# print(text.decode())
+# a = [5, 2, -5, 3, 6, -8, 7, 3, -65, 2]
+# a.sort(key=abs)
+# print(a)
+# a = ["hello", "bye", "worldddd", "apple"]
+# a.sort(key=len)
+# print(a)
+
+# a = ["apple", "BYE"]
+# a.sort(key=str.lower)
+# print(a)
 
 
-# text = "Hello"
-# print(len(text.encode("ascii")))
+# a = [1, 2, 3, 4, 5, 6, 7, 8]
+# del a[1:4]
+# print(a)
 
-# text = "    "
-# print(text.isprintable())
-# print(text.islower())
-# print(text.isupper())
-# print(text.istitle())
-# print(text.isalpha())
-# print(text.isdigit())
-# print(text.isnumeric())
-# print(text.isdecimal())
-# print(text.isalnum())
-# print(text.isspace())
-# print(text.isprintable())
-# print(text.isascii())
-# print(text.isidentifier())
-# print(text.isalpha())
-# print(text.capitalize())
-# print(text.lower())
-# print(text.upper())
-# print(text.title())
-# print(text.swapcase())
-# print(text.casefold())
-# text = "Hello\tworldrewteww\tpython"
-# print(text.count("ell", 2, 7))
-# print(text.center(11, "-"))
-# print(text.ljust(11, "-"))
-# print(text.rjust(11, "-"))
-# print(text.zfill(11))
-# print(text.expandtabs(8))
-# print("Hello".endswith("llo"))
-# print("Hello".startswith("Hell"))
-# print("Hello".removeprefix("Hell"))
-# print("Hello".removesuffix("Hell"))
-# print("Hello World Python".replace(" ", "---", 1))
-# print("Hello Hello".find("el"))
-# print("Hello Hello".rfind("el"))
-# print("Hello Hello".index("elll"))
-# print("Hello Hello".rindex("el"))
+# a = [4, 5, 6, 7]
+# print(reversed(a))
+# print(sorted(a, reverse=True))
 
-# print("Hello--World--Python".split("--", 1))
-# print("Hello--World--Python".rsplit("--", 1))
-# print("Hello--World--Python".partition("--"))
-# print("Hello--World--Python".rpartition("--"))
-# print("--".join("HELLO"))
 
-# text = "-.,-,-..Hello-..,.world ,.,.,-python-,.,-,-,"
-# print(text.lstrip(".,-"))
-# print(text.rstrip(".,-"))
-# print(text.strip(".,-"))
+# a = [1, 2, 3, [7, 8, [9, "HELLO", 10], 11, 12, 13], 4, 5, 6, ]
+# print(a[3][2][1][-1])
 
-# text = "Hello\nworld"
-# print(text.splitlines())
+# a = 1, 2, 3, 4, 5
+# b = tuple("HELLO")
+# print(a)
+# print(b)
 
-# print(ord("\n"))
-# print(chr(0))
+# not tuple
+# a = (i for i in range(10))
+# print(a)
 
-# print(bin(15))
-# print(bin(9))
-# print(bin(15 ^ 9))
-# print(~-4)
-# a = 32
-# print((a & (a-1) == 0 and a != 0))
-# print(bin(32))
-# print(bin(31))
-# print(32 & 31)
-# branch homework
+
+# a = (1, 2, 3, 4, (5, 6, [], 7), 8, 9)
+# print(a)
+
+# allowed_methods = ("GET", "POST")
+# user_method = "PUT"
+# print(user_method in allowed_methods)
+
+
+# def foo():
+#     print("foo")
+
+
+# a = (foo,)
+# print(hash(foo))
+# from time import sleep
+# sleep(60)
+# print(hash(foo))
+
+
+# data = {
+#     "name": "Alex",
+#     "surname": "Pavlov",
+#     1: True
+# }
+# data2 = {
+#     "age": 34,
+#     "lang": "ru",
+#     "surname": "Maximov"
+# }
+# print(data | data2)
+# print({**data, **data2})
+
+# a = dict([("name", "Alex"), ("languages", ["ru", "en"])])
+# print(a)
+# a = dict.fromkeys(["name", "city"], "Н/У")
+# print(a)
+
+# a = {i: ord(i) for i in "HELLO"}
+# print(a)
+
+# data = {
+#     "name": "Alex",
+#     "city": "Minsk"
+# }
+# print(data.keys())
+# print(list(data))
+# print(data.values())
+# print(data.items())
+# data.update({"city": "Mogilev", "age": 34})
+# data |= {"city": "Mogilev", "age": 34}
+# print(data)
+# print(data.get("city", "Н/У"))
+# print(data.setdefault("age"))
+# print(data)
+# print(data.pop("age", None))
+# print(data)
+# print(data.popitem())
+# print(data)
+# data = dict(["ab", "cd", "ef", (1, 4), ((True, False), "booool")])
+# print(data)
+
+# data = {
+#     (1, 2, []): "tuple"
+# }
+# print(data[(1, 2, [])])
+
+# a, *b, c = (1, 2, 3, 4, 5)
+# print(a)
+# print(b)
+# print(c)
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# c = [*a, *b]
+# print(c)
+
+# print(a := input())
+# print(a)
+
+# if (age := int(input())) > 18:
+#     print("oldest")
+
+# a = {5, 6, 21, 3, -4, 5, 34, 6, 2, 1, 9, 10}
+# print(a)
+
+# a = set("HELLO WORLD")
+
+# from collections import *
+
+
+# User = namedtuple("User", ("first_name", "last_name", "email"))
+#
+# vasya = User(first_name="Vasya", last_name="Pupkin", email="vasya@pupkin.com")
+# print(vasya.first_name)
+# print(vasya.email)
+# print(vasya._asdict())
+
+# q = deque([1, 2, 3, 4, 5, 6, 7])
+# q.rotate(-2)
+# print(q)
+
+# data = defaultdict(list)
+# data["age"].extend([1, 2, 3, 4])
+# print(data)
+
+# data = OrderedDict({"name": "Alex", "email": "alex@gmail.com", "age": 32})
+# data.popitem(last=False)
+# data.move_to_end("email", last=True)
+
+# text = "HELLO"
+# c = Counter(text)
+# print(c.most_common(2))
+# print(list(c.elements()))
+
+# data1 = {"a": "B", "c": "D"}
+# data2 = {"c": "E", "f": "G"}
+#
+# chain = ChainMap(data1, data2)
+# chain["c"] = "K"
+# chain.parents["i"] = "O"
+# print(chain)
