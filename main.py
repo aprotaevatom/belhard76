@@ -47,6 +47,3 @@ class Vector:
 
     def __len__(self):
         return abs(self.a - self.b)
-
-
-a = Vector(4, 5)
