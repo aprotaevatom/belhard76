@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from psycopg2 import connect
+from starlette.requests import Request
 from uvicorn import run
 
 
@@ -8,14 +9,16 @@ def is_palindrome(text: str) -> bool:
 
 
 app = FastAPI()
+
+
+@app.get(path="/")
+async def index(request: Request):
+    pass
+
+
 conn = connect("postgresql://admin:admin@0.0.0.0:5432/admin")
 with conn.cursor() as cur:
     cur.execute(f"select * from category where category.id = {int(input())}")
 
-
-if __name__ == '__main__':
-    run(
-        app=app,
-        host="0.0.0.0",
-        port=80
-    )
+if __name__ == "__main__":
+    run(app=app, host="0.0.0.0", port=80)
